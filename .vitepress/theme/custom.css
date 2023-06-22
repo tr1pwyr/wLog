@@ -1,0 +1,108 @@
+@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.min.css");
+:root {
+  --vp-c-brand: #19c37d;
+  --vp-c-brand-light: #19c37d;
+  --vp-c-brand-dark: #D4F266;
+  --vp-c-hover: #404040;
+  --vp-c-bg: #F2F2F2;
+  --vp-c-bg-alpha-with-backdrop: rgba(250, 246, 241, 0.7);
+  --vp-c-color-b: #d7fe63;
+  --vp-c-color-c: #abc852;
+  --vp-c-color-d: #272727;
+  --vp-c-color-e: #5c683a;
+
+  --vp-font-family-base:  "Inter var experimental",
+    "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --vp-font-family-mono: "LXGW WenKai Mono Lite", ui-monospace, SFMono-Regular,
+    "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New",
+    monospace;
+}
+
+.dark {
+  --vp-c-bg: #0D0D0D;
+  --vp-c-text: #F2F2F2;
+  --vp-c-hover: #D4F266;
+  --vp-c-bg-alpha-with-backdrop: rgba(44, 54, 57, 0.7);
+}
+
+#app {
+  min-height: 100vh;
+  position: relative;
+}
+
+.theme {
+  background-color: var(--vp-c-bg);
+}
+
+.vp-doc h2 {
+  margin-top: 0;
+  border-top: none;
+}
+
+.VPDocOutlineDropdown {
+  display: none !important;
+}
+
+.logo{
+  display: none !important;
+}
+
+.VPNav{
+  background-color: rgb(255, 255, 255, .33);
+  border-bottom: 2px solid #fff;
+}
+
+.dark .VPNav{
+  background-color: rgba(34, 34, 34, 0.33);
+  border-bottom: 2px solid black;
+}
+
+button {
+  display: inline-block;
+  position: relative;
+  color: var(--vp-c-color-d);
+  cursor: pointer;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-weight: bold;
+  background: rgb(255, 255, 255, .5);
+  border-radius: .33rem;
+}
+
+.dark button {
+  background: rgb(0, 0, 0, .5);
+  color: #f2f2f2;
+}
+
+.dark button:hover {
+  background: black;
+  color: white;
+}
+
+button:hover {
+  background: white;
+}
+
+button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--vp-c-color-d);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.content {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
