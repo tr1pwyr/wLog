@@ -53,10 +53,10 @@ async function config() {
           text: "Home",
           link: "/",
         },
-        // {
-        //   text: "#Tags",
-        //   link: "/tags",
-        // },
+        {
+          text: "Tags",
+          link: "/tags",
+        },
         {
           text: "Archives",
           link: "/archives",

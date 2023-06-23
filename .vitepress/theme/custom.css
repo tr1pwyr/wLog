@@ -1,4 +1,4 @@
-@import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.min.css");
+/* @import url("https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.6.0/style.min.css"); */
 :root {
   --vp-c-brand: #19c37d;
   --vp-c-brand-light: #19c37d;
@@ -10,7 +10,6 @@
   --vp-c-color-c: #abc852;
   --vp-c-color-d: #272727;
   --vp-c-color-e: #5c683a;
-
   --vp-font-family-base:  "Inter var experimental",
     "Inter var", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
@@ -105,4 +104,36 @@ button:hover::after {
 .content {
   padding-left: 0!important;
   padding-right: 0!important;
+}
+
+.gt-counts, a.gt-link, .gt-ico-text{
+  color: var(--vp-c-brand-light);
+}
+
+.gt-svg{
+  fill: var(--vp-c-brand)!important;
+}
+
+span.gt-ico-tip{
+  color: #fff;
+}
+
+.gt-user-name, a.gt-comment-username{
+  color: var(--vp-c-brand)!important;
+}
+
+.gt-btn{
+  background-color: var(--vp-c-brand)!important;
+  color: #fff!important;
+  border: none!important;
+}
+
+.dark .gt-header-textarea, .dark .gt-comment-content{
+  background-color: var(--vp-c-bg)!important;
+  color: var(--vp-c-color-d)!important;
+  border: 1px solid var(--vp-c-color-d)!important;
+}
+
+.gt-svg svg{
+  fill: var(--vp-c-brand)!important;
 }
